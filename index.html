@@ -1,46 +1,129 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
-    <title>Home</title>
+    <title>ElRincóndelCafé</title>
 </head>
+
 <body>
-    <div id="contenedor">
-        <header>
-            <h1>Encabezado Principal</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="quienesSomos.html">Quienes Somos</a></li>
-                    <li><a href="areaActuacion.html">Area de actuación</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header>
+        <div class="contenedor">
+            <div class="menu">
+                <a href="index.html">
+                    <h1 class="logo-nombre">ElRincón<span class="resaltado-logo">DelCafé</span></h1>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="quienesSomos.html">Quiénes Somos</a></li>
+                        <li><a href="areaActuacion.html">Area de actuación</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-texto">
+                <h2 class="eslogan">Tu tienda de café online</h2>
+                <p>Gran variedad de tipos de cafés, orígenes y aromas. Envios a todo el mundo.</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="contenedor plantilla-contenido">
         <main>
             <section>
-                <header>
-                    <h2>Sección Principal</h2>
-                </header>
-                <article>
-                    <h3>Título del Artículo</h3>
-                    <p>Contenido del artículo.</p>
+                <h2>Nuestros cafés más nuevos</h2>
+                <p>Descubre nuestra cuidada selección de los productos más recientes que hemos incorporado a nuestro
+                    catálogo. Desde granos recién llegados de fincas exóticas hasta nuevas mezclas con aromas intensos y
+                    sabores únicos. Echa un vistazo a nuestras últimas novedades y déjate sorprender por la calidad y el
+                    carácter de cada uno de nuestros cafés:</p>
+                <article class="entrada">
+                    <div class="entrada-imagen">
+                        <img src="img/cafe-arabigo.jpg" alt="imagen blog">
+                    </div>
+                    <div class="entrada-contenido">
+                        <h3>Café arábica premium</h3>
+                        <p>El café arábica es suave, aromático y con un toquecito frutal que te va a conquistar desde el
+                            primer sorbo. Cultivado en las alturas, tiene ese sabor especial que lo hace perfecto para
+                            disfrutar sin prisas, como se merece un buen café.</p>
+                        <a href="entrada.html" class="boton boton-primario">Leer Entrada</a>
+                    </div>
                 </article>
-                <footer>
-                    <p>Pie de sección</p>
-                </footer>
+                <article class="entrada">
+                    <div class="entrada-imagen">
+                        <img src="img/arabica-robusta.jpg" alt="imagen blog">
+                    </div>
+                    <div class="entrada-contenido">
+                        <h3>Café robusta</h3>
+                        <p>Con más cuerpo y un toque de intensidad, el robusta es perfecto si te gustan los sabores
+                            fuertes y con carácter. Tiene más cafeína que el arábica, ideal para arrancar el día con
+                            energía y sin vueltas.</p>
+                        <a href="entrada.html" class="boton boton-primario">Leer Entrada</a>
+                    </div>
+                </article>
+                <article class="entrada">
+                    <div class="entrada-imagen">
+                        <img src="img/Red-Bourbon.jpg" alt="imagen blog">
+                    </div>
+                    <div class="entrada-contenido">
+                        <h3>Café Red Bourbon</h3>
+                        <p>El red bourbon es todo lo que buscas en un café suave pero con personalidad: dulzura
+                            natural, notas a caramelo y un toque afrutado que lo hace irresistible. Si te gustan los
+                            cafés elegantes y con sabor redondo, este te va a enamorar.</p>
+                        <a href="entrada.html" class="boton boton-primario">Leer Entrada</a>
+                    </div>
+                </article>
             </section>
-
-            <aside>
-                <h2>Barra Lateral</h2>
-                <p>Contenido adicional, como enlaces o noticias.</p>
-            </aside>
         </main>
-        <footer>
 
-        </footer>
+        <aside>
+            <h2>Nuestro Blog</h2>
+            <article class="entrada">
+                <div class="entrada-contenido">
+                    <h4>Las mejores recetas de café para este verano</h4>
+                    <p>Se acerca el verano y con él, a menudo, nos entran ganas de experimetnar cosas nuevas. Si es el
+                        caso, ¡nosotros tenemos la solución perfecta con nuestras recetas veraniegas!</p>
+                    <a href="entrada.html" class="boton boton-secundario">Leer Entrada</a>
+                </div>
+            </article>
+            <article class="entrada">
+                <div class="entrada-contenido">
+                    <h4>Tips para mejorar tu molienda del café</h4>
+                    <p>Disfruta como nunca antes de moler tus granos y disfrutar de tu tan merecido premio: una taza de
+                        café de sabor intenso.</p>
+                    <a href="entrada.html" class="boton boton-secundario">Leer Entrada</a>
+                </div>
+            </article>
+            <article class="entrada">
+                <div class="entrada-contenido">
+                    <h4>¿Sabías que el agua puede cambiar por completo el sabor de tu café?</h4>
+                    <p>No basta con buenos granos: si el agua no acompaña, la magia no ocurre. En este post te contamos
+                        cómo elegir el agua ideal para que cada taza sepa justo como te gusta.</p>
+                    <a href="entrada.html" class="boton boton-secundario">Leer Entrada</a>
+                </div>
+            </article>
+        </aside>
     </div>
+
+    <footer>
+        <div class="contenedor">
+            <div class="menu">
+                <a href="index.html">
+                    <h1 class="logo-nombre">ElRincón<span class="resaltado-logo">DelCafé</span>
+                    </h1>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="quienesSomos.html">Quienes Somos</a></li>
+                        <li><a href="areaActuacion.html">Area de actuación</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>
