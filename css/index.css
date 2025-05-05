@@ -252,3 +252,74 @@ form{
       }
       
 }
+/***************************** Area Actuacion **********************************/
+main{
+    margin: 0 50px;
+ }
+
+.introduccion{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.origen, .empaquetado-envio{
+    margin: 0 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.procesado{
+    margin: 0 200px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px;
+}
+img{
+    width: 25rem;
+    height: auto;
+}
+.text-origen{
+    width: 50%;
+}
+@media (max-width: 528px){
+    main{
+        margin: 0 10px;
+    }
+    .origen, .procesado, .empaquetado-envio{
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+    
+    .text-origen{
+        width: auto;
+    }
+    img{
+        width: 100%;
+        max-width: 300px; 
+        height: auto;
+    }
+      
+}
+@media (max-width: 768px){
+    main{
+        margin: 0 10px;
+    }
+    .origen, .procesado, .empaquetado-envio{
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+    .text-origen{
+        width: auto;
+    }
+    img{
+        width: 100%;
+        max-width: 300px; 
+        height: auto;
+    }
+
+}
+
