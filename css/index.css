@@ -189,7 +189,7 @@ footer {
     color: var(--primario);
     font-size: 3em;
     text-align: center;
-    margin-top: 0.5em; /* espacio desde arriba */
+    margin-top: 0.5em; 
   }
   
 .historia {
@@ -202,7 +202,7 @@ footer {
 }
 
 .historia-imagen {
-    max-width: 21.8em; /* Puedes ajustar este tamaño */
+    max-width: 21.8em;
 }
 
 .historia-imagen img {
@@ -226,7 +226,7 @@ footer {
     background-position: 0%;
     background-size: cover;
     border-radius: 0.5em;
-    padding: 1em 2em 2em; /* Espacio arriba, lados y más abajo */
+    padding: 1em 2em 2em;
     text-align: center;
     width: 100%;
     margin-top: 2em;
@@ -281,24 +281,46 @@ footer {
     color: #555;
 }
 
-@media (max-width: 768px) and (max-heigth: 1024px) { /*Tablet vertical*/
-    .historia {
-        display: flex;
-        flex-wrap: wrap;
-      }
-    
-      .historia-imagen {
-        display: none;
-      }
-    
-      .historia-texto {
-        order: 1;
-        width: 100%;
-        text-align: justify;
-      }
+@media (min-width: 601px) and (max-width: 768px) { /*Tablet vertical*/
+  .historia {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: -2em;
+  }
+
+  .historia-imagen {
+   display: none;
+  }
+
+  .historia-texto {
+    font-size: 1.3em;
+    text-align: justify;
+  }
+
+  .claves {
+    align-items: center;
+  }
+
+  .claves article {
+    width: 75%;
+    height: 24em;
+  }
+
+  .claves article h3 {
+    font-size: 1.8em;
 }
 
-@media (max-width: 1024px) and (max-heigth: 768px) { /*Tablet horizontal*/
+  .claves article img {
+    width: 10em;
+  }
+
+  .claves article p {
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){ /*Tablet horizontal*/
     .historia {
       flex-direction: row;
       flex-wrap: wrap;
@@ -309,14 +331,6 @@ footer {
     .historia-imagen {
       flex: 1 1 30%;
       max-width: 18em;
-    }
-
-    .historia-texto {
-        flex: 1;
-      font-size: 0.9em;
-        line-height: 1.8em;
-        color: #333;
-        text-align: justify;
     }
   
     .historia-texto {
@@ -338,6 +352,7 @@ footer {
   
     .claves article {
       width: 45%;
+      height: 21.5em;
     }
   
     .nuestras-pasiones {
