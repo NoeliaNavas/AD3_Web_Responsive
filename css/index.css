@@ -222,7 +222,7 @@ footer {
 }
 
 .nuestras-pasiones {
-    background-image: url(../img/close-up-taza-de-cafe-con-granos-tostados.jpg);
+    background-image: url(../img/Nuestras-pasiones.jpg);
     background-position: 0%;
     background-size: cover;
     border-radius: 0.5em;
@@ -236,7 +236,7 @@ footer {
 .claves h2 {
     width: 100%;
     text-align: center;
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 0em;
     font-weight: bold;
     color: var(--blanco);
@@ -252,6 +252,7 @@ footer {
 
 .claves article {
     width: 15em;
+    height: 24em;
     background-color: #fff;
     border-radius: 1em;
     padding: 1.5em 1em;
