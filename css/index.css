@@ -190,13 +190,12 @@ footer {
     align-items: flex-start;
     gap: 2em;
     padding: 2em;
-    max-width: 70em;
+    max-width: 72em;
     margin: 0 auto;
 }
 
 .historia-imagen {
-    flex: 0 0 auto;
-    max-width: 21.6em; /* Puedes ajustar este tamaño */
+    max-width: 21.8em; /* Puedes ajustar este tamaño */
 }
 
 .historia-imagen img {
@@ -214,13 +213,29 @@ footer {
     color: #333;
     text-align: justify;
 }
+
+.nuestras-pasiones {
+    background-image: url(../);
+    background-position: 0%;
+    padding: 1em 2em 2em; /* Espacio arriba, lados y más abajo */
+    text-align: center;
+    width: 100%;
+    margin: 0; /* importante: elimina espacio hacia abajo */
+}
+
+.nuestras-pasiones h2 {
+    color: #1c1c1c;
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+
 .claves h2 {
     width: 100%;
     text-align: center;
     font-size: 2em;
     margin-bottom: 0em;
     font-weight: bold;
-    color: #1c1c1c;
+    color: var(--blanco);
 }
 
 .claves {
@@ -240,18 +255,12 @@ footer {
     transition: transform 0.3s ease;
 }
 
-.claves article:hover {
-    transform: translateY(-0.3em);
+.claves article img{
+    width: 11em;
 }
 
-.claves article img {
-    width: 3.75em; /* 60px */
-    height: 3.75em;
-    background-color: #5c3d2e;
-    border-radius: 50%;
-    padding: 0.75em; /* 12px */
-    margin-bottom: 1em;
-    object-fit: contain;
+.claves article:hover {
+    transform: translateY(-0.3em);
 }
 
 .claves article h3 {
