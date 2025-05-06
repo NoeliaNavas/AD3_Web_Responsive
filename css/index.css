@@ -185,6 +185,13 @@ footer {
 
 /***************************** QUIENES SOMOS **********************************/
 
+.quienes-somos {
+    color: var(--primario);
+    font-size: 3em;
+    text-align: center;
+    margin-top: 0.5em; /* espacio desde arriba */
+  }
+  
 .historia {
     display: flex;
     align-items: flex-start;
@@ -218,14 +225,15 @@ footer {
     background-image: url(../img/close-up-taza-de-cafe-con-granos-tostados.jpg);
     background-position: 0%;
     background-size: cover;
+    border-radius: 0.5em;
     padding: 1em 2em 2em; /* Espacio arriba, lados y más abajo */
     text-align: center;
     width: 100%;
-    margin: 0; /* importante: elimina espacio hacia abajo */
+    margin-top: 2em;
+    margin-bottom: 1em;
 }
 
 .claves h2 {
-    color: var(--primario);
     width: 100%;
     text-align: center;
     font-size: 2em;
@@ -247,7 +255,7 @@ footer {
     background-color: #fff;
     border-radius: 1em;
     padding: 1.5em 1em;
-    box-shadow: 0 0.375em 0.625em rgba(0, 0, 0, 0.08); /* 6px 10px */
+    box-shadow: 0 0.375em 0.625em rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease;
 }
 
