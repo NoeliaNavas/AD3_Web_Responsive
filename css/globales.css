@@ -144,13 +144,3 @@ footer {
   margin-top: 2em;
 }
 
-footer .menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-footer .menu nav ul {
-  flex-direction: row;
-  margin-top: 0;
-}
