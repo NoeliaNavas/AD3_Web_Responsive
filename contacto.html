@@ -3,10 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>Contacto</title>
 </head>
 <body>
+    <header>
+        <div class="contenedor">
+            <div class="menu">
+                <a href="index.html">
+                    <h1 class="logo-nombre">ElRincón<span class="resaltado-logo">DelCafé</span></h1>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="quienesSomos.html">Quiénes Somos</a></li>
+                        <li><a href="areaActuacion.html">Area de actuación</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-texto">
+                <h2 class="eslogan">Tu tienda de café online</h2>
+                <p>Gran variedad de tipos de cafés, orígenes y aromas. Envios a todo el mundo.</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2>Contáctanos</h2>
+        <form class="formulario" method="post" autocomplete="on">
+            <fieldset class="datos_personales">
+    
+                <legend>Datos Personales</legend>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
+            
+                <div>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" name="apellidos" id="apellidos">
+                </div>
+            
+                <div>
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" name="correo" id="correo">
+                </div>
+                <div>
+                    <label for="telefono">Número de teléfono</label>
+                    <input type="number" name="telefono" id="telefono">
+                </div>
+            </fieldset>
+            <fieldset>
+    
+                <legend>Motivo del contacto</legend>
+                <label for="motivo_contacto"></label>
+                <select name="motivo_contacto" id="motivo_contacto">
+                    <option value="1">¿Puedo hacer pedidos online?</option>
+                    <option value="2">¿Que pasa si mi paquete de café viene dañado?</option>
+                    <option value="3">¿Donde esta mi pedido?</option>
+                    <option value="4">Cambios y/o devoluciones.</option>
+                    <option value="5">Encargos para regalar.</option>
+                    <option value="6">Reclamaciones.</option>
+                </select>
+                <div>
+                    <legend>Comentarios</legend>
+                    <textarea id="comentarios" name="comentarios" maxlength="560"></textarea>
+                </div>
+            </fieldset>
+            <div class="button">
+                <input type="submit" value="Enviar"> 
+                <input type="reset" value="Borrar">
+            </div>    
+        </form>
+    </main>
+    <footer>
+        <div class="contenedor">
+            <div class="menu">
+                <a href="index.html">
+                    <h1 class="logo-nombre">ElRincón<span class="resaltado-logo">DelCafé</span>
+                    </h1>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="quienesSomos.html">Quienes Somos</a></li>
+                        <li><a href="areaActuacion.html">Area de actuación</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
     
 </body>
 </html>
