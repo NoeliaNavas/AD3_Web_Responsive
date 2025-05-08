@@ -44,6 +44,23 @@ a {
   color: var(--blanco);
 }
 
+.contenedor {
+  width: 90%;
+  margin: auto;
+}
+
+@media (min-width: 1024px) {
+  .contenedor {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .contenedor {
+    width: 60%;
+  }
+}
+
 /* Header */
 
 header {
@@ -52,23 +69,6 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-}
-
-.contenedor {
-  width: 90%;
-  margin: auto;
-}
-
-.menu {
-  padding-top: 2em;
-}
-
-@media (min-width: 850px) {
-  .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
 }
 
 .logo-nombre {
@@ -82,11 +82,33 @@ header {
   font-weight: 700;
 }
 
-nav ul {
-  display: flex;
-  gap: 1.5em;
+.menu {
+  padding-top: 2em;
+  display: block;
+}
+
+.menu nav ul {
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+  margin-top: 2em;
   list-style: none;
   justify-content: center;
+  display: flex;
+  gap: 1.5em;
+}
+
+@media (min-width: 1075px) {
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu nav ul {
+    flex-direction: row;
+    margin-top: 0;
+  }
 }
 
 nav ul li a {
@@ -97,10 +119,10 @@ nav ul li a {
 .header-texto {
   text-align: center;
   color: var(--blanco);
-  margin-top: 5em;
+  margin-top: 2em;
 }
 
-@media (min-width: 850) {
+@media (min-width: 1075px) {
   .header-texto {
     margin-top: 7em;
   }
@@ -120,4 +142,15 @@ footer {
   background-color: var(--negro);
   padding-bottom: 2em;
   margin-top: 2em;
+}
+
+footer .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .menu nav ul {
+  flex-direction: row;
+  margin-top: 0;
 }
