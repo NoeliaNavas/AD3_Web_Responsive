@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+
+:root {
+  --fuenteHeading: 'PT Sans', sans-serif;
+  --fuenteParrafos: 'Open Sans', sans-serif;
+
+  --primario: #784D3C;
+  --gris: #e1e1e1;
+  --blanco: #ffffff;
+  --negro: #000000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fuenteParrafos);
+  line-height: 2;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--fuenteHeading);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--primario)
+}
+
+h2 {
+  font-size: 3em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--blanco);
+}
+
+.contenedor {
+  width: 90%;
+  margin: auto;
+}
+
+@media (min-width: 1024px) {
+  .contenedor {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .contenedor {
+    width: 60%;
+  }
+}
+
+/* Header */
+
+header {
+  background-image: url(../img/banner.jpg);
+  height: 25em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.logo-nombre {
+  color: var(--blanco);
+  font-weight: 400;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.resaltado-logo {
+  font-weight: 700;
+}
+
+.menu {
+  padding-top: 2em;
+  display: block;
+}
+
+.menu nav ul {
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+  margin-top: 2em;
+  list-style: none;
+  justify-content: center;
+  display: flex;
+  gap: 1.5em;
+}
+
+@media (min-width: 1075px) {
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu nav ul {
+    flex-direction: row;
+    margin-top: 0;
+  }
+}
+
+nav ul li a {
+  color: var(--blanco);
+  font-size: 1em;
+}
+
+.header-texto {
+  text-align: center;
+  color: var(--blanco);
+  margin-top: 2em;
+}
+
+@media (min-width: 1075px) {
+  .header-texto {
+    margin-top: 7em;
+  }
+}
+
+.header-texto h2 {
+  color: var(--blanco)
+}
+
+.eslogan {
+  font-size: 1.5em;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--negro);
+  padding-bottom: 2em;
+  margin-top: 2em;
+}
+
+footer .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .menu nav ul {
+  flex-direction: row;
+  margin-top: 0;
+}

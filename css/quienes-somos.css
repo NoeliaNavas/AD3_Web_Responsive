@@ -1,0 +1,272 @@
+.somos-activo {
+  font-weight: bold;
+}
+
+.quienes-somos {
+  color: var(--primario);
+  font-size: 3em;
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+.historia {
+  display: flex;
+  align-items: flex-start;
+  gap: 2em;
+  padding: 2em;
+  max-width: 72em;
+  margin: 0 auto;
+}
+
+.historia-imagen {
+  display: none;
+}
+
+.historia-imagen img {
+  width: 100%;
+  border-radius: 0.5em;
+  object-fit: cover;
+  display: block;
+}
+
+.historia-texto {
+  flex: 1;
+  font-size: 1.1em;
+  line-height: 1.8em;
+  color: #333;
+  text-align: justify;
+}
+
+.parrafoquienessomos{
+  padding-bottom: 0.5em;
+}
+
+.nuestras-pasiones {
+  background-image: url(../img/Nuestras-pasiones.jpg);
+  background-position: 0%;
+  background-size: cover;
+  border-radius: 0.5em;
+  padding: 1em 2em 2em;
+  text-align: center;
+  width: 100%;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.claves h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 0em;
+  font-weight: bold;
+  color: var(--blanco);
+}
+
+.claves {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2em;
+  text-align: center;
+}
+
+.claves article {
+  width: 20em;
+  height: 22em;
+  background-color: #fff;
+  border-radius: 1em;
+  padding: 1.5em 1em;
+  box-shadow: 0 0.375em 0.625em rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.claves article img {
+  width: 9em;
+}
+
+.claves article:hover {
+  transform: translateY(-0.3em);
+}
+
+.claves article h3 {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #2d2d2d;
+  margin-bottom: 0.5em;
+}
+
+.claves article p {
+  font-size: 1.1
+  em;
+  line-height: 1.5em;
+  color: #555;
+}
+
+@media (min-width: 768px){
+  .historia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+  }
+
+  .historia-imagen {
+    flex: 0 0 25%;
+    max-width: 12em;
+  }
+
+  .historia-imagen img {
+    display: none;
+  }
+
+  .historia-texto {
+    max-width: 94%;
+    padding: 1em 0;
+    text-align: justify;
+    font-size: 1.02em;
+  }
+
+  .parrafoquienessomos{
+    padding-bottom: 0.5em;
+  }
+
+  /* Nuestras Pasiones */
+  .nuestras-pasiones {
+    background-size: cover;
+    background-position: center;
+    padding: 2em 4em;
+    text-align: center;
+  }
+
+  .nuestras-pasiones {
+    padding: 1em;
+  }
+
+  .claves {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+  }
+
+  .claves article {
+    width: 18em;
+    height: 22em;
+  }
+
+  .claves article img {
+    width: 100%;
+    max-width: 10em;
+  }
+}
+
+@media (min-width: 1920px){
+  .somos-activo {
+    font-weight: bold;
+  }
+  
+  .quienes-somos {
+    color: var(--primario);
+    font-size: 3em;
+    text-align: center;
+    margin-top: 0.5em;
+  }
+  
+  .historia {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 2.1em;
+    padding: 2em;
+    max-width: 73em;
+    margin: 0 auto;
+    flex-direction: row;
+  }
+  
+  .historia-imagen {
+    display: inline;
+    flex: 0 0 auto;
+    position: relative;
+    margin-top: 0.7em;
+    max-width: 21.8em;
+  }
+  
+  .historia-imagen img {
+    width: 22em;
+    height: 40em;
+    border-radius: 0.5em;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .historia-texto {
+    flex: 1;
+    font-size: 1.1em;
+    line-height: 1.9em;
+    color: #333;
+    text-align: justify;
+  }
+  
+  .parrafoquienessomos{
+    padding-bottom: 0.5em;
+  }
+  .nuestras-pasiones {
+    background-image: url(../img/Nuestras-pasiones.jpg);
+    background-position: 0%;
+    background-size: cover;
+    border-radius: 0.5em;
+    padding: 1em 2em 2em;
+    text-align: center;
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+  
+  .claves h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 0em;
+    font-weight: bold;
+    color: var(--blanco);
+  }
+  
+  .claves {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2em;
+    text-align: center;
+  }
+  
+  .claves article {
+    width: 15em;
+    height: 24em;
+    background-color: #fff;
+    border-radius: 1em;
+    padding: 1.5em 1em;
+    box-shadow: 0 0.375em 0.625em rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+  }
+  
+  .claves article img {
+    width: 11em;
+  }
+  
+  .claves article:hover {
+    transform: translateY(-0.3em);
+  }
+  
+  .claves article h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #2d2d2d;
+    margin-bottom: 0.7em;
+  }
+  
+  .claves article p {
+    font-size: 0.95em;
+    line-height: 1.5em;
+    color: #555;
+  }
+}
