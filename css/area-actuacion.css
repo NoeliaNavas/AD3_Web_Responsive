@@ -1,0 +1,98 @@
+main {
+    margin: 0 50px;
+}
+
+main .titulo-actuacion {
+    text-align: center;
+    margin: 0.5em;
+    line-height: 1;
+}
+
+
+section {
+    margin-bottom: 3em;
+    border-bottom: 2px solid var(--gris);
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+
+
+
+.origen,
+.empaquetado-envio {
+    display: flex;
+    align-items: center;
+    padding-bottom: 2em;
+    justify-content: space-around;
+    gap: 5em;
+
+    border-radius: 0.5em;
+}
+
+.procesado {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 2em;
+    align-items: center;
+    gap: 5em;
+
+    border-radius: 05.em
+}
+
+img {
+    max-width: 25em;
+    height: auto;
+}
+
+@media (max-width: 528px) {
+    main {
+        margin: 0 10px;
+    }
+
+    .origen,
+    .procesado,
+    .empaquetado-envio {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .text-origen {
+        width: auto;
+    }
+
+    img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 768px) {
+    main {
+        margin: 0 10px;
+    }
+
+    .origen,
+    .procesado,
+    .empaquetado-envio {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .text-origen {
+        width: auto;
+    }
+
+    img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+}

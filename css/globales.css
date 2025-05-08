@@ -9,6 +9,7 @@
   --gris: #e1e1e1;
   --blanco: #ffffff;
   --negro: #000000;
+  --detalle: rgb(252, 246, 239);
 }
 
 * {
@@ -42,6 +43,10 @@ h2 {
 a {
   text-decoration: none;
   color: var(--blanco);
+}
+
+img {
+  border-radius: 0.5em;
 }
 
 .contenedor {
