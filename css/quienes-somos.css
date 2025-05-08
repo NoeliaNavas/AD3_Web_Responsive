@@ -31,10 +31,14 @@
 
 .historia-texto {
   flex: 1;
-  font-size: 0.95em;
+  font-size: 1.1em;
   line-height: 1.8em;
   color: #333;
   text-align: justify;
+}
+
+.parrafoquienessomos{
+  padding-bottom: 0.5em;
 }
 
 .nuestras-pasiones {
@@ -67,8 +71,8 @@
 }
 
 .claves article {
-  width: 15em;
-  height: 24em;
+  width: 20em;
+  height: 22em;
   background-color: #fff;
   border-radius: 1em;
   padding: 1.5em 1em;
@@ -77,7 +81,7 @@
 }
 
 .claves article img {
-  width: 11em;
+  width: 9em;
 }
 
 .claves article:hover {
@@ -85,14 +89,15 @@
 }
 
 .claves article h3 {
-  font-size: 1.1em;
+  font-size: 1.4em;
   font-weight: bold;
   color: #2d2d2d;
-  margin-bottom: 0.7em;
+  margin-bottom: 0.5em;
 }
 
 .claves article p {
-  font-size: 0.95em;
+  font-size: 1.1
+  em;
   line-height: 1.5em;
   color: #555;
 }
@@ -120,6 +125,10 @@
     padding: 1em 0;
     text-align: justify;
     font-size: 1.02em;
+  }
+
+  .parrafoquienessomos{
+    padding-bottom: 0.5em;
   }
 
   /* Nuestras Pasiones */
@@ -167,7 +176,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    gap: 2.9em;
+    gap: 2.1em;
     padding: 2em;
     max-width: 73em;
     margin: 0 auto;
@@ -177,12 +186,14 @@
   .historia-imagen {
     display: inline;
     flex: 0 0 auto;
+    position: relative;
+    margin-top: 0.7em;
     max-width: 21.8em;
   }
   
   .historia-imagen img {
     width: 22em;
-    height: 39em;
+    height: 40em;
     border-radius: 0.5em;
     object-fit: cover;
     display: block;
@@ -196,6 +207,9 @@
     text-align: justify;
   }
   
+  .parrafoquienessomos{
+    padding-bottom: 0.5em;
+  }
   .nuestras-pasiones {
     background-image: url(../img/Nuestras-pasiones.jpg);
     background-position: 0%;
