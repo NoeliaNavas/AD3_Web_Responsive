@@ -42,9 +42,21 @@ section:last-of-type {
     border-radius: 05.em
 }
 
-img {
+.origen img {
     max-width: 25em;
-    height: auto;
+    height: 18em;
+    
+}
+.proceso_img img{
+    max-width: 25em;
+    height: 20em;
+    
+}
+
+.empaquetado_img img{
+    width: 25em;
+    height: 19em;
+    
 }
 
 @media (max-width: 528px) {
