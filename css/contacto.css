@@ -6,26 +6,41 @@ form{
     text-align: left;
     padding: 0 5px;
     width: 600px;
-    height: 500px;
+    height: 50em;
     border: 5px outset var(--primario);
     border-radius: 10px;
     background-color: var(--gris);
     font-size: 16px;
     display: flex; 
     flex-direction: column; 
+    justify-content: space-around;
     
+}
+.datos_personales{
+     height: 20em;
 }
 .datos_personales label{
     margin-left: 5px;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
+.motivoContacto{
+    height: 20em;
+}
+
 #motivo_contacto{
     margin-left: 5px;
+
+}
+.text_comentario{
+    margin-top: 5em;
 }
 #comentarios{    
     height: 100px;      
     overflow-y: auto;       
-    width: 100%;             
+    width: 100%;            
 }
 
 .button{
