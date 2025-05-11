@@ -18,9 +18,6 @@ section:last-of-type {
     border-bottom: none;
 }
 
-
-
-
 .origen,
 .empaquetado-envio {
     display: flex;
@@ -45,18 +42,19 @@ section:last-of-type {
 .origen_img img {
     max-width: 25em;
     height: 18em;
-    
-}
-.proceso_img img{
-    max-width: 25em;
-    height: 20em;
-    
+
 }
 
-.empaquetado_img img{
+.proceso_img img {
+    max-width: 25em;
+    height: 20em;
+
+}
+
+.empaquetado_img img {
     width: 25em;
     height: 19em;
-    
+
 }
 
 @media (max-width: 528px) {
